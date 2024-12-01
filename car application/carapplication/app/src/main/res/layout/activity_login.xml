@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/green"
+    android:gravity="center"
+    tools:context=".Login">
+
+    <!-- Titre de la page -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/images"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login here"
+        android:textStyle="bold"
+        android:textColor="#CC000000"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Champ pour le numéro de téléphone -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:inputType="phone"
+        android:id="@+id/Mobile"
+        android:maxLines="1"
+        android:hint="Mobile"
+        android:textSize="20sp"
+        android:background="@drawable/rounded_edittext"
+        android:drawableStart="@drawable/baseline_add_call_24"
+        android:drawablePadding="10dp"
+        android:textColorHint="@color/gris"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp" />
+
+    <!-- Champ pour le mot de passe -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:inputType="textPassword"
+        android:id="@+id/Password"
+        android:maxLines="1"
+        android:hint="Password"
+        android:drawableStart="@drawable/baseline_fingerprint_24"
+        android:drawablePadding="10dp"
+        android:textSize="20sp"
+        android:background="@drawable/rounded_edittext"
+        android:textColorHint="@color/gris"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_marginTop="10dp" />
+
+    <!-- Bouton de connexion -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/LoginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:text="Login"
+        android:background="@color/white" />
+
+    <!-- Lien vers la page d'inscription -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:id="@+id/RegisterNowBtn"
+            android:text="Register Now"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_blue_dark" />
+    </LinearLayout>
+
+</LinearLayout>

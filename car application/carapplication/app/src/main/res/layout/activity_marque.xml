@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/or"
+    android:gravity="center"
+    android:layout_marginTop="50dp">
+
+    <!-- Titre de l'activité -->
+    <TextView
+        android:id="@+id/titleImmatricule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Photo de voiture"
+        android:textSize="30sp"
+        android:textColor="#2F2F2F"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- ImageView pour afficher la photo -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="@color/white"
+        android:layout_marginBottom="32dp"
+        android:src="@android:drawable/ic_menu_camera"
+        android:contentDescription="Image de l'immatricule"
+        android:scaleType="centerInside"
+        android:layout_gravity="center" />
+
+    <!-- Bouton pour prendre une photo avec la caméra -->
+    <Button
+        android:id="@+id/btnTakePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prendre une photo"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:background="@drawable/backrgound1"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:drawableLeft="@drawable/baseline_camera_24"
+        android:drawablePadding="8dp" />  <!-- Espace entre l'icône et le texte -->
+
+    <!-- Bouton pour choisir une photo depuis la galerie -->
+    <Button
+        android:id="@+id/btnChoosePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choisir une photo"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:background="@drawable/backrgound1"
+        android:padding="12dp"
+        android:drawableLeft="@drawable/baseline_add_photo_alternate_24"
+        android:drawablePadding="8dp" />  <!-- Espace entre l'icône et le texte -->
+
+</LinearLayout>

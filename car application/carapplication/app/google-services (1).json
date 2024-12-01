@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "246079711021",
+    "project_id": "car-application-login",
+    "storage_bucket": "car-application-login.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:246079711021:android:0d6cbfeb6f7231a57295a4",
+        "android_client_info": {
+          "package_name": "com.example.carapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAusODEc8YGkUPIhlGSTgo5X4bQG1F_LH0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
